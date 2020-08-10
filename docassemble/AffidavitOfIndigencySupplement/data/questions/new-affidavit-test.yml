@@ -453,19 +453,19 @@ fields:
   - 'Federal tax': users[0].tax_federal
     datatype: currency
     default: |
-      0.00
+      0
   - 'State tax': users[0].tax_state
     datatype: currency
     default: |
-      0.00
+      0
   - 'Social security tax': users[0].tax_social_security
     datatype: currency
     default: |
-      0.00
+      0
   - 'Medicare tax': users[0].tax_medicare
     datatype: currency
     default: |
-      0.00
+      0
   - 'Do you have other taxes?': users[0].tax_other_yes
     datatype: yesnoradio
   - 'Please specify other taxes': users[0].tax_other
@@ -474,7 +474,7 @@ fields:
     show if: users[0].tax_other_yes
     datatype: currency
     default: |
-      0.00
+      0
 ---
 id: tax total calcuation 
 code: |
